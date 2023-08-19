@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --header_color: black;
+    --content_color: #333;
+    --box_color: #6974CF;
+    --text-color: #FCFCFC;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    background-color: var(--header_color);
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+
+.app_name{
+    color: var(--text-color);
+    font-style: Inter;
+    font-weight: 800 bold;
+    padding: 10px;
+}
+
+.nav-links{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    
+}
+
+.nav-links a{
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.nav-links a:hover{
+    border-bottom: 2px solid white;
+}
+
+/*------------footer-------*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: flex-start;
+    background: var(--content_color);
+    height: 43vh;
+}
+
+.footer-container .social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+}
+.footer-container .social-media .text1{
+    display: flex;
+    margin-bottom: -1rem;
+}
+.footer-container .social-media .text1 h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.footer-container .social-media .mail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.footer-container .social-media p{
+    display: flex;
+    align-items: flex-start;
+    margin: 0.4rem;
+    text-align: center;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+.footer-container .social-media p a{
+    text-decoration: none;
+    color: var(--text-color);
+    align-items: center;
+    text-align: center;
+}
+.footer-container .social-media p a img{
+    align-items: center;
+    width: 1.3rem;
+    margin: 0 0.2rem;
+    text-align: left;
+}.footer-container .social-media p a:hover img{
+    transform: scale(1.2);
+}
+.footer-container .divider{
+    height: 30vh;
+    width: 1px;
+    background: var(--text-color);
+    align-content: center;
+    margin: 50px 10px;
+}
+.footer-container .contacts{
+    display: flex;
+    padding: 0 0.5rem;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.footer-container .contacts .mail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.footer-container .contacts .mail p{
+    display: flex;
+    margin: 0.5rem;
+    text-align: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: .9rem;
+}
+.footer-container .contacts .text1{
+    margin-bottom: -1rem;
+}
+.footer-container .contacts .text1 h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+}

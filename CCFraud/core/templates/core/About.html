@@ -1,0 +1,48 @@
+{% extends 'core/base.html'%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/About.css'%}">
+    <title>{%block title%}About{%endblock%}</title>
+</head>
+<body>
+    {%block content%}
+    <div class="content">
+        <div class="section-1">
+            <img src="{% static 'core/images/image5.png'%}">
+            <h1>About</h1>
+        </div>
+        <div class="section-2">
+            <img src="{% static 'core/images/image6.jpg'%}">
+            <div class="sub-section-1">
+                <h1>Our mission</h1>
+                <p>Our mission is to provide universities with a reliable and efficient solution 
+                    to credit card fraud detection, empowering them to safeguard their financial operations and 
+                    protect their students and staff from financial loss and identity theft. We believe that AI 
+                    technology can play a crucial role in achieving this mission, and we are committed to making 
+                    it accessible and easy to use for all universities.</p>
+            </div>
+           
+        </div>
+        <div class="section-3">
+            <p>At CCard, we make credit card fraud detection a breeze with our AI-powered tools. 
+                We accept CSV files, analyze the data, 
+                and produce graphs and images of the results, 
+                making it easy to identify fraudulent transactions in your dataset.</p>
+        </div>
+        
+        <div class="section-4">
+            <h1>Unleashing the Power of AI to Detect Credit Card Fraud</h1>
+            <p>CCard is a company that specializes in identifying fraudulent and 
+                legit credit card transactions using state-of-the-art AI models.
+                 We accept CSV files containing credit card transaction data and 
+                 analyze them to provide accurate results that you can trust.</p>
+            <button>Get Started Now</button>
+        </div>
+    </div>
+    {%endblock%}
+</body>
+</html>

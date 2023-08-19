@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/base.css' %}">
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/landing_page.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/About.css' %}">
+    {% endblock %}
+    <title> {% block title%}{{ title }}{%endblock%} </title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="app_name">CCardFraud</div>
+        <div class="nav-links">
+            <a href="">Get Started</a>
+            <a href="">Dashboard</a>
+            <a href="">Upload</a>
+            <a href="">About</a>
+        </div>
+    </div>   
+</body>
+
+<!-- main content  -->
+<main>
+    {%block content%}
+    {%endblock%}
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="social-media">
+            <div class="text1">
+                <h3>Follow Us</h3>
+            </div>
+            <div class="mail">
+                <p><a href=""><img src="{% static 'core/icons/linkedin.svg'%}"> LinkedIn</a></p>
+                <p><a href=""><img src="{% static 'core/icons/vector.svg'%}"> Github</a></p>
+                <p><a href=""><img src="{% static 'core/icons/twitter.svg'%}"> Twitter</a></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="contacts">
+            <div class="text1">
+                <h3>contact us</h3>
+            </div>
+            <div class="mail">
+                <p>sabastainofori@gmail.com</p>
+                <p>guru12345@gmail.com</p>
+                <p>guru12345@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

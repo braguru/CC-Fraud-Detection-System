@@ -1,0 +1,67 @@
+{% extends 'core/base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}Home{%endblock%}</title>
+
+    <link rel="stylesheet" href="{% static 'core/css/landing_page.css' %}">
+
+</head>
+
+<body>
+    {% block content%}
+    <div class="content">
+        <img src="{% static 'core/images/image1.jpg' %}" alt="Background image">
+        <div class="text">
+            <p>AI-Powered Credit Card Fraud <br>Detection</p>
+            <button>Get Started Now</button>
+        </div>
+        <div class="section">
+            <div class="text1">
+                What we do
+            </div>
+            <div class="container">
+                <div class="box">
+                    <p id="CSV">CSV File Upload</p>
+                    <p id="upload">Upload your dataset of credit card transactions in CSV format and let our AI models do the job.</p>
+                </div>
+                <div class="box">
+                    <p id="CSV">Fraud Detection</p>
+                    <p id="upload">Our AI models will process the credit card transactions in the dataset and detect fraudulent transactions with high accuracy.</p>
+                </div>
+                <div class="box">
+                    <p id="CSV" >Legit Transactions Detection</p>
+                    <p id="upload">Our AI models can distinguish between legit and fraudulent transactions using your uploaded dataset. We will provide a detailed report on each transaction, including the confidence level of fraud detection.</p>
+                </div>
+                <div class="box">
+                    <p id="CSV">Graphical Results</p>
+                    <p id="upload">We will generate graphs and visualizations of the results produced from the AI models. These visualizations will allow you to gain insights into the dataset and the transactions within</p>
+                </div>
+            </div>
+
+            <div class="section_1">
+                <div class="text2">
+                    <h1>Unleashing the Power of AI to Detect Credit Card Fraud</h1>
+                    <p>CCard is a company that specializes in identifying fraudulent and 
+                        legit credit card transactions using state-of-the-art AI models.
+                         We accept CSV files containing credit card transaction data and 
+                         analyze them to provide accurate results that you can trust.</p>
+                    <button>Get Started Now</button>
+                </div>
+                <div class="pic">
+                    <img src="{% static 'core/images/image2.jpg' %}">
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+{%endblock%}
+</body>
+</html>
+
+

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --header_color: black;
+    --content_color: #333;
+    --box_color: #6974CF;
+    --text-color: #FCFCFC;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    max-width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.content .section-1 img{
+    max-width: 100vw;
+    height: 1555px;
+    position: relative;
+    margin-bottom: -10px;
+    margin-top: -100px; 
+}
+
+.content .section-1 h1{
+    position: absolute;
+    color: var(--text-color);
+    margin-left: 40px;
+    font-size: 64px;
+    margin-top: -105%;
+    /* border: 2px solid red; */
+}
+
+.content .section-2{
+    background-color: var(--content_color);
+    position: absolute;
+    display: flex;
+    margin-top: -90%;
+    height: 420px;
+}
+
+.content .section-2 img{
+    width: 657px;
+    height: 420px;
+    margin-left: 40px;
+}
+
+.content .section-2 .sub-section-1{
+    color: var(--text-color);
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.content .section-2 .sub-section-1 h1{
+    color: var(--text-color);
+}
+
+.content .section-2 .sub-section-1 p{
+    color: var(--text-color);
+    height: 239px;
+    margin-top: 40px;
+}
+
+.content .section-3{
+    position: absolute;
+    margin-top: -50%;
+}
+
+.content .section-3 p{
+    color: var(--text-color);
+    margin-left: 80px;
+    height: 500px;
+    width: 700px;
+    font-size: 24px;
+}
+
+.content .section-4{
+    background: var(--content_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: -50px; */
+}
+
+.content .section-4 h1{
+    color: var(--text-color);
+    width: 650px;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 60px;
+}
+
+.content .section-4 p{
+    color: var(--text-color);
+    width: 610px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+.section-4 button{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-left: 530px;
+    margin-bottom: 20px;
+}
