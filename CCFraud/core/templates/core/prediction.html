@@ -1,0 +1,47 @@
+{% extends 'core/base.html'%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block styles%}
+    <link rel="stylesheet" href="{% static 'core/css/prediction.css'%}">
+    {%endblock%}
+    <title>{%block title%}Dashboard | Datasets{%endblock%}</title>
+</head>
+<body>
+    {%block content%}
+    <div class="block">
+        <div class="predict_header">
+            <p>List of all datasets</p>
+        </div>
+        <div class="block_table">
+            <table>
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>File Name</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody style="text-align: center">
+                    <tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td>
+                        <button class="success" type="button">View Data </button>
+                        <button class="success" type="button"> Delete </button>
+                        <button class="success" type="button">Prediction</button>
+                        <button class="success" type="button">Analysis</button>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {%endblock%}
+
+</body>

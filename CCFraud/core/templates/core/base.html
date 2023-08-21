@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/base.css' %}">
-    {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'core/css/landing_page.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/About.css' %}">
+    {% block styles %}
     {% endblock %}
     <title> {% block title%}{{ title }}{%endblock%} </title>
 </head>
 
 <body>
     <div class="header">
-        <div class="app_name">CCardFraud</div>
+        <div class="app_name"><a href="{% url 'landing_page'%}">CCardFraud</a></div>
         <div class="nav-links">
-            <a href="">Get Started</a>
-            <a href="">Dashboard</a>
-            <a href="">Upload</a>
-            <a href="">About</a>
+            <a href="{%url 'result'%}">Predict</a>
+            <a href="{%url 'predict'%}">Dashboard</a>
+            <a href="{%url 'upload'%}">Upload</a>
+            <a href="{%url 'about'%}">About</a>
         </div>
     </div>   
 </body>

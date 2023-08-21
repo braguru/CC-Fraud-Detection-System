@@ -1,0 +1,102 @@
+{% extends 'core/base.html'%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block styles%}
+    <link rel="stylesheet" href="{% static 'core/css/results.css'%}">
+    {%endblock%}
+    <title>{%block title%}Results{%endblock%}</title>
+</head>
+<body>
+    {%block content%}
+    <div class="whole">
+        <div class="block_table">
+            <table class="table_1">
+                <div class="table_1_header">
+                    <p>Select File</p>
+                </div>
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>File Name</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody style="text-align: center">
+                    <tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td>
+                        <button class="success" type="button">View Data </button>
+                        <button class="success" type="button">Prediction</button>
+                        <button class="success" type="button">Analysis</button>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tcontainer">
+            <table class="table_2">
+                <div class="table_2_header">
+                    <p>Prediction results</p>
+                    <div class="btn">
+                        <button class="danger" type="button">Download</button>
+                        <button class="danger" type="button"> copy </button>
+                    </div>
+                </div>
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Prediction</th>
+                    <th>Time</th>
+                    <th>v1</th>
+                    <th>v2</th>
+                    <th>v3</th>
+                    <th>v4</th>
+                    <th>v5</th>
+                    <th>v6</th>
+                    <th>v7</th>
+                    <th>v8</th>
+                    <th>v9</th>
+                    <th>v10</th>
+                    <th>v11</th>
+                    <th>v12</th>
+                    <th>v13</th>
+                    <th>v14</th>
+                    <th>v15</th>
+                    <th>v16</th>
+                    <th>v17</th>
+                    <th>v18</th>
+                    <th>v19</th>
+                    <th>v20</th>
+                    <th>v21</th>
+                    <th>v22</th>
+                    <th>v23</th>
+                    <th>v24</th>
+                    <th>v25</th>
+                    <th>v26</th>
+                    <th>v27</th>
+                    <th>v28</th>
+                </tr>
+                </thead>
+                <tbody style="text-align: center">
+                    <tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td>
+                        
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {%endblock%}
+
+</body>

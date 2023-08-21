@@ -15,3 +15,9 @@ class About(TemplateView):
 def upload(request):
 
     return render(request, 'core/upload.html')
+
+def predict(request):
+    return render(request, 'core/prediction.html')
+
+def result(request):
+    return render(request, 'core/result.html')

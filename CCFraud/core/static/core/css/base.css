@@ -27,14 +27,19 @@ body{
     font-style: Inter;
     font-weight: 800 bold;
     padding: 10px;
+    text-decoration: none;
+}
+
+.app_name a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .nav-links{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    width: 25%;
-    
+    width: 25%;    
 }
 
 .nav-links a{
@@ -42,7 +47,6 @@ body{
     text-decoration: none;
     color: var(--text-color);
 }
-
 
 .nav-links a:hover{
     border-bottom: 2px solid white;

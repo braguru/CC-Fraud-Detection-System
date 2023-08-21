@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --header_color: black;
+    --content_color: #333;
+    --box_color: #6974CF;
+    --text-color: #FCFCFC;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .container{
+    max-height: 100vh;
+} */
+
+.container{
+    background-image: url(../images/image7.png);
+    background-position: center;
+    background-repeat: no repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container .upload_header{
+    background-color: var(--content_color);
+}
+
+.container .upload_header p{
+    color: var(--text-color);
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+.container .upload_table{
+    width: 400px;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 490px;
+    justify-content: center;
+}
+
+.container .upload_table .upload_table_header{
+    color: var(--text-color);
+    background-color: var(--content_color);
+    width: 100%;
+    text-align: center;
+}
+
+.container .upload_table .upload_table_header p{
+    font-size: 16px;
+}
+
+.container .upload_table form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.container .upload_table form .file-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.container .upload_table form .file-name label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .upload_table form .file-name input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    background: white;
+    font-size: 15px;
+    
+}
+
+.container .upload_table form .file-select{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .upload_table form .file-select label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .upload_table form .file-select .choose_file{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .upload_table form .file-textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;   
+}
+
+.container .upload_table form .file-textarea label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .upload_table form .file-textarea textarea{
+    height: 80px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: white;
+    /* border-radius: 10px; */
+    font-size: 15px;
+}
+
+.container .upload_table form button{
+    width: 240px;
+    align-self: center;
+    height: 40px;
+    background: var(--content_color);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.container .upload_table form button:hover{
+    cursor: pointer;
+}

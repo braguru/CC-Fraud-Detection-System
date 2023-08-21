@@ -26,7 +26,6 @@ body{
     height: 1555px;
     position: relative;
     margin-bottom: -10px;
-    margin-top: -100px; 
 }
 
 .content .section-1 h1{
@@ -35,7 +34,6 @@ body{
     margin-left: 40px;
     font-size: 64px;
     margin-top: -105%;
-    /* border: 2px solid red; */
 }
 
 .content .section-2{

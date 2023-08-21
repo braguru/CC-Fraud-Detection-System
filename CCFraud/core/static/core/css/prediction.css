@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --header_color: black;
+    --content_color: #333;
+    --box_color: #6974CF;
+    --text-color: #FCFCFC;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.block{
+    background-image: url(../images/image8.png);
+    background-position: center;
+    background-repeat: no repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.block .predict_header{
+    background: var(--content_color);
+    height: 70px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.block .predict_header p{
+    color: var(--text-color);
+    margin-left: 150px;
+    font-size: 18px;
+    /* border: 2px solid red; */
+}
+
+.block .block_table{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.block .block_table table, tr, td, th{
+    border: none;
+}
+
+.block .block_table thead{
+    background: var(--content_color);
+}
+.block .block_table thead tr{
+    color: var(--text-color);
+    height: 40px;
+    border: none;
+}
+
+.block .block_table tbody{
+    background: white;
+    border: none;
+    height: 40px;
+}
+
+.block .block_table tbody td button{
+    width: 80px;
+    height: 30px;
+    margin-right: 5px;
+    color: var(--text-color);
+    border-radius: 10px;
+    border: none;
+}
+
+.block .block_table .success:first-child{
+    background: green;
+}
+.block .block_table .success:nth-child(2){
+    background: red;
+}
+.block .block_table .success:nth-child(3){
+    background: blue;
+}
+.block .block_table .success:nth-child(4){
+    background: rgb(177, 177, 16);
+}

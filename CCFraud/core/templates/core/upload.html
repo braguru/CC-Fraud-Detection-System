@@ -5,13 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block styles%}
     <link rel="stylesheet" href="{% static 'core/css/upload.css'%}">
+    {%endblock%}
     <title>{%block title%}Upload Dataset{%endblock%}</title>
 </head>
 <body>
     {%block content%}
-    <div class="container">
-        
+    <div class="container">  
+        <div class="upload_header">
+            <p>Upload Dataset</p>
+        </div>
+        <div class="upload_table">
+            <div class="upload_table_header">
+                <p>Upload Credit Card Dataset</p>
+            </div>
+            <form>
+                <div class="file-name">
+                    <label for="file name" >File name</label>
+                    <input type="text" name="file_name">
+                </div>
+                <div class="file-select">
+                    <label for="file select" >Select File</label>
+                    <input class="choose_file" type="file" name="select_file">
+                </div>
+                <div class="file-textarea">
+                    <label for="description" >Description</label>
+                    <textarea type="textarea" name="textarea"></textarea>
+                </div>
+                <button>upload</button>
+            </form>
+        </div>
     </div>
     {%endblock%}
 </body>
