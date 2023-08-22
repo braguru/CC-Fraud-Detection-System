@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/base.css' %}">
+    {% block onload_js%}
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    {%endblock%}
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+   
     {% block styles %}
     {% endblock %}
     <title> {% block title%}{{ title }}{%endblock%} </title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="app_name"><a href="{% url 'landing_page'%}">CCardFraud</a></div>
-        <div class="nav-links">
-            <a href="{%url 'result'%}">Predict</a>
-            <a href="{%url 'predict'%}">Dashboard</a>
-            <a href="{%url 'upload'%}">Upload</a>
-            <a href="{%url 'about'%}">About</a>
-        </div>
-    </div>   
+    <nav>
+        <a class="app_name" href="{% url 'landing_page'%}">CCardFraud</a>
+        <ul>
+            <li><a class="nav-link {% if url_name == 'result' %}active{% endif %}" href="{%url 'result'%}">Predict</a></li>
+            <li><a class="nav-link {% if url_name == 'predict' %}active{% endif %}" href="{%url 'predict'%}">Dashboard</a></li>
+            <li><a class="nav-link {% if url_name == 'upload' %}active{% endif %}" href="{%url 'upload'%}">Upload</a></li>
+            <li><a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{%url 'about'%}">About</a></li>
+        </ul>
+    </nav>   
 </body>
 
 <!-- main content  -->

@@ -11,36 +11,32 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-image: url('../images/image5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .content{
     max-width: 100vw;
     /* height: 100vh; */
-    position: relative;
-    /* display: flex;
-    flex-direction: column; */
-}
-
-.content .section-1 img{
-    max-width: 100vw;
-    height: 1555px;
-    position: relative;
-    margin-bottom: -10px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
 }
 
 .content .section-1 h1{
-    position: absolute;
+    /* position: absolute; */
     color: var(--text-color);
     margin-left: 40px;
     font-size: 64px;
-    margin-top: -105%;
 }
 
 .content .section-2{
     background-color: var(--content_color);
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    margin-top: -90%;
+    margin-top: 100px;
     height: 420px;
 }
 
@@ -57,9 +53,9 @@ body{
     margin-top: 30px;
 }
 
-.content .section-2 .sub-section-1 h1{
+/* .content .section-2 .sub-section-1 h1{
     color: var(--text-color);
-}
+} */
 
 .content .section-2 .sub-section-1 p{
     color: var(--text-color);
@@ -68,8 +64,8 @@ body{
 }
 
 .content .section-3{
-    position: absolute;
-    margin-top: -50%;
+    /* position: absolute; */
+    margin-top: 100px;
 }
 
 .content .section-3 p{
@@ -85,7 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: -50px; */
+    margin-top: -200px;
 }
 
 .content .section-4 h1{
@@ -114,4 +110,13 @@ body{
     margin-top: 60px;
     margin-left: 530px;
     margin-bottom: 20px;
+}
+
+
+/* Media queries */  
+  /* Large screens */
+@media only screen and (min-width: 1024px) {
+    .section-4 h1, .section-4 p, .section-4 button{
+        margin-left: 550px;
+    }
 }

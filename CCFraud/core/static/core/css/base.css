@@ -12,45 +12,68 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-.header{
+nav{
     display: flex;
     background-color: var(--header_color);
     justify-content: space-between;
     height: 50px;
-    padding: 10px;
+    padding: 5px;
+    /* border: 2px solid red; */
 }
 
-.app_name{
+nav .app_name{
     color: var(--text-color);
     font-style: Inter;
     font-weight: 800 bold;
-    padding: 10px;
+    text-decoration: none;
+    margin-top: 14px;
+    /* border: 2px solid yellow; */
+}
+
+nav ul{
+    /* border: 2px solid red; */
+    float: right;
     text-decoration: none;
 }
 
-.app_name a{
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
     text-decoration: none;
     color: var(--text-color);
+    padding: 5px;
 }
 
-.nav-links{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 25%;    
-}
-
-.nav-links a{
-    position: relative;
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.nav-links a:hover{
+nav ul li a:hover{
     border-bottom: 2px solid white;
 }
+
+nav ul li a.active{
+    border-bottom: 2px solid blue;
+    font-weight: 500;
+}
+
+/* label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+} */
+
 
 /*------------footer-------*/
 .footer-container{
